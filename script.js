@@ -3,7 +3,8 @@ let current_value = 2;
 
 element.addEventListener('change', (event) => {
   if (current_value < event.target.value) {
-
+    current_value += 1;
+    
     var parent = document.querySelector('#jobs-wrapper');
 
     var container_large = document.createElement('div');
@@ -11,7 +12,7 @@ element.addEventListener('change', (event) => {
 
     var heading = document.createElement('h3');
     heading.setAttribute('class', 'heading-style-h3');
-    heading.innerHTML = `Add job ${current_value + 1} details`
+    heading.innerHTML = `Add job ${current_value} details`
     container_large.append(heading)
 
     var margin_job_details = document.createElement('div');
@@ -35,8 +36,8 @@ element.addEventListener('change', (event) => {
     var job_details_wrapper__grid = document.createElement('div');
     job_details_wrapper__grid.setAttribute('class', 'job-item-content--wrapper is--grid_4');
     job_details_wrapper__grid.innerHTML = `<input type="text" class="fs-input_field w-node-dc5c7b47-21bb-07e1-c186-0837db214083-8efa05fd w-input" maxlength="256"
-    name="Job-title-${current_value + 1}" data-name="Job-title-${current_value + 1}" placeholder="Job title"
-    id="Job-title-${current_value + 1}">
+    name="Job-title-${current_value}" data-name="Job-title-${current_value}" placeholder="Job title"
+    id="Job-title-${current_value}">
 <div fs-selectcustom-element="dropdown" data-delay="0" data-hover="false"
     id="w-node-ce715d50-d5de-3649-da19-3459e64cf688-8efa05fd" class="fs-select-1 w-dropdown">
     <div class="fs-select_toggle-1 w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1"
@@ -45,8 +46,8 @@ element.addEventListener('change', (event) => {
         <div class="fs-select_text-1">Junior Level</div>
     </div>
     <nav class="fs-select_list-1 w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1"
-        role="listbox" aria-multiselectable="false"><select id="Select-experience-level-${current_value + 1}"
-            name="Select-experience-level-${current_value + 1}" data-name="Select-experience-level-${current_value + 1}"
+        role="listbox" aria-multiselectable="false"><select id="Select-experience-level-${current_value}"
+            name="Select-experience-level-${current_value}" data-name="Select-experience-level-${current_value}"
             class="fs-select_field-1 w-select">
             <option value="Junior Level">Junior Level</option>
             <option value="Mid level">Mid level</option>
@@ -67,7 +68,7 @@ element.addEventListener('change', (event) => {
     </div>
     <nav class="fs-select_list-1 w-dropdown-list" id="w-dropdown-list-2" aria-labelledby="w-dropdown-toggle-2"
         role="listbox" aria-multiselectable="false"><select id="Select-Job-type-4"
-            name="Select-Job-type-${current_value + 1}" data-name="Select-Job-type-${current_value + 1}" required=""
+            name="Select-Job-type-${current_value}" data-name="Select-Job-type-${current_value}" required=""
             class="fs-select_field-1 w-select">
             <option value="Part-time">Part-time</option>
             <option value="Full-time">Full-time</option>
@@ -77,10 +78,10 @@ element.addEventListener('change', (event) => {
             role="option" aria-selected="false">Full-time</a><a href="#" class="fs-select_link-1 w-dropdown-link"
             tabindex="-1" role="option" aria-selected="false">Contract</a></nav>
 </div><input type="text" class="fs-input_field w-node-_4a95e53b-9f15-9fb4-e91d-4a03a8010c8e-8efa05fd w-input"
-    maxlength="256" name="Job-Category-${current_value + 1}" data-name="Job-Category-${current_value + 1}"
-    placeholder="Job Category" id="Job-Category-${current_value + 1}"><input type="email"
+    maxlength="256" name="Job-Category-${current_value}" data-name="Job-Category-${current_value}"
+    placeholder="Job Category" id="Job-Category-${current_value}"><input type="email"
     class="fs-input_field w-node-e810f514-91f8-58f5-ef2e-b5108deeeddd-8efa05fd w-input" maxlength="256"
-    name="Email-job-${current_value + 1}" data-name="Email-job-${current_value + 1}" placeholder="Email to apply"
+    name="Email-job-${current_value}" data-name="Email-job-${current_value}" placeholder="Email to apply"
     id="Email-job" required="">`
 
     job_details_wrapper.append(job_details_wrapper__grid)
@@ -93,7 +94,7 @@ element.addEventListener('change', (event) => {
 
     var heading_compensation = document.createElement('h3');
     heading_compensation.setAttribute('class', 'heading-style-h3');
-    heading_compensation.innerHTML = `Compensation ${current_value + 1}`
+    heading_compensation.innerHTML = `Compensation ${current_value}`
     container_large_compensation.append(heading_compensation)
 
     container_large_compensation.append(margin_job_details);

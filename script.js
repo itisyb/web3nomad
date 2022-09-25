@@ -55,20 +55,20 @@
       margin_job_details.append(underlay)
 
       //job details
-      // var job_details_container = document.createElement('div');
-      // job_details_container.setAttribute('class', 'job-details-container');
-      // margin_job_details.append(job_details_container)
+      var job_details_container = document.createElement('div');
+      job_details_container.setAttribute('class', 'job-details-container');
+      margin_job_details.append(job_details_container)
 
-      // var job_details_wrapper = document.createElement('div');
-      // job_details_wrapper.setAttribute('class', 'job-details-wrapper');
-      // job_details_container.append(job_details_wrapper)
+      var job_details_wrapper = document.createElement('div');
+      job_details_wrapper.setAttribute('class', 'job-details-wrapper');
+      job_details_container.append(job_details_wrapper)
 
-      // var job_details_wrapper__grid = document.createElement('div');
-      // job_details_wrapper__grid.setAttribute('class', 'job-item-content--wrapper is--grid_4');
-      // job_details_wrapper__grid.innerHTML = '<input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336340-8efa05fd w-input" maxlength="256" name="Min-sal" data-name="Min-sal" placeholder="Minimum Salary" id="Min-sal"><input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336353-8efa05fd w-input" maxlength="256" name="Max-sal" data-name="Max-sal" placeholder="Maximum Salary" id="Max-sal"><p id="w-node-_55a05724-e6fe-45f8-1a41-81c1b9961bc6-8efa05fd" class="text-weight-light">No worries if the company is not listed yet, let’s fill out the fields below and make it happen.</p><input type="text" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336354-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Minimum Equity (If provided)" id="name-3"><input type="text" class="fs-input_field w-node-_16fff19b-86dc-5ba6-ccd7-01d1f071dd22-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Maximum Equity (If provided)" id="name-3"><div id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a4-8efa05fd" class="remote--switech"><label id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a5-8efa05fd" class="w-checkbox fs-checkbox_toggle-7"><div class="fs-checkbox_toggle-dot-7"></div><input type="checkbox" class="w-checkbox-input fs-checkbox_button-7" name="Checkbox-7" fs-cmsfilter-field="featured" data-name="Checkbox 7" aria-label="add_description_here" id="Checkbox-7"><span class="fs-checkbox_label-7 w-form-label" for="Checkbox-7">Checkbox 8</span><div class="fs-checkbox_mask-7"></div></label><h5 id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3ab-8efa05fd" class="text-weight-light">Option to pay in crypto</h5></div>'
+      var job_details_wrapper__grid = document.createElement('div');
+      job_details_wrapper__grid.setAttribute('class', 'job-item-content--wrapper is--grid_4');
+      job_details_wrapper__grid.innerHTML = '<input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336340-8efa05fd w-input" maxlength="256" name="Min-sal" data-name="Min-sal" placeholder="Minimum Salary" id="Min-sal"><input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336353-8efa05fd w-input" maxlength="256" name="Max-sal" data-name="Max-sal" placeholder="Maximum Salary" id="Max-sal"><p id="w-node-_55a05724-e6fe-45f8-1a41-81c1b9961bc6-8efa05fd" class="text-weight-light">No worries if the company is not listed yet, let’s fill out the fields below and make it happen.</p><input type="text" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336354-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Minimum Equity (If provided)" id="name-3"><input type="text" class="fs-input_field w-node-_16fff19b-86dc-5ba6-ccd7-01d1f071dd22-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Maximum Equity (If provided)" id="name-3"><div id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a4-8efa05fd" class="remote--switech"><label id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a5-8efa05fd" class="w-checkbox fs-checkbox_toggle-7"><div class="fs-checkbox_toggle-dot-7"></div><input type="checkbox" class="w-checkbox-input fs-checkbox_button-7" name="Checkbox-7" fs-cmsfilter-field="featured" data-name="Checkbox 7" aria-label="add_description_here" id="Checkbox-7"><span class="fs-checkbox_label-7 w-form-label" for="Checkbox-7">Checkbox 8</span><div class="fs-checkbox_mask-7"></div></label><h5 id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3ab-8efa05fd" class="text-weight-light">Option to pay in crypto</h5></div>'
 
-      // job_details_wrapper.append(job_details_wrapper__grid)
-      // margin_job_details.append(job_details_container)
+      job_details_wrapper.append(job_details_wrapper__grid)
+      margin_job_details.append(job_details_container)
       parent.append(container_large_compensation)
 
 

@@ -141,7 +141,7 @@ element.addEventListener('change', (event) => {
     parent.append(container_large_compensation)
 
 
-    console.log('greater')
+    console.log('greater yes')
     current_value = event.target.value;
   } else {
     console.log('smaller');

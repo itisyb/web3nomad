@@ -8,10 +8,10 @@ element.addEventListener('change', (event) => {
 
     var container_large = document.createElement('div');
     container_large.setAttribute('class', 'container-large margin-top margin-xxlarge');
-    
+
     var heading = document.createElement('h3');
     heading.setAttribute('class', 'heading-style-h3');
-    heading.innerHTML = 'Add job details'
+    heading.innerHTML = `Add job ${current_value + 1} details`
     container_large.append(heading)
 
     var margin_job_details = document.createElement('div');
@@ -34,7 +34,54 @@ element.addEventListener('change', (event) => {
 
     var job_details_wrapper__grid = document.createElement('div');
     job_details_wrapper__grid.setAttribute('class', 'job-item-content--wrapper is--grid_4');
-    job_details_wrapper__grid.innerHTML = '<input type="text" class="fs-input_field w-node-dc5c7b47-21bb-07e1-c186-0837db214083-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Job title" id="name-3"><div fs-selectcustom-element="dropdown" data-delay="0" data-hover="false" id="w-node-_2835fd21-2d37-7305-3df1-33f5263481df-8efa05fd" data-w-id="2835fd21-2d37-7305-3df1-33f5263481df" class="fs-select-1 w-dropdown"><div class="fs-select_toggle-1 w-dropdown-toggle" id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0" aria-haspopup="listbox" aria-expanded="false" role="button" tabindex="0"><div class="fs-select_icon-1 w-icon-dropdown-toggle" aria-hidden="true"></div><div class="fs-select_text-1">Select one...</div></div><nav class="fs-select_list-1 w-dropdown-list" id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0" role="listbox" aria-multiselectable="false"><select id="select-field" name="select-field-1" data-name="select field 1" class="fs-select_field-1 w-select"><option value="">Select one...</option><option value="First">First choice</option><option value="Second">Second choice</option><option value="Third">Third choice</option></select><a href="#" class="fs-select_link-1 w-dropdown-link w--current" tabindex="0" role="option" aria-selected="true">Select one...</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">First choice</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">Second choice</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">Third choice</a></nav></div><div fs-selectcustom-element="dropdown" data-delay="0" data-hover="false" id="w-node-fdb3bfc3-11fa-899c-8b1a-c25b7e4294fe-8efa05fd" data-w-id="fdb3bfc3-11fa-899c-8b1a-c25b7e4294fe" class="fs-select-1 w-dropdown"><div class="fs-select_toggle-1 w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1" aria-haspopup="listbox" aria-expanded="false" role="button" tabindex="0"><div class="fs-select_icon-1 w-icon-dropdown-toggle" aria-hidden="true"></div><div class="fs-select_text-1">Select one...</div></div><nav class="fs-select_list-1 w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1" role="listbox" aria-multiselectable="false"><select id="select-field" name="select-field-1" data-name="select field 1" class="fs-select_field-1 w-select"><option value="">Select one...</option><option value="First">First choice</option><option value="Second">Second choice</option><option value="Third">Third choice</option></select><a href="#" class="fs-select_link-1 w-dropdown-link w--current" tabindex="0" role="option" aria-selected="true">Select one...</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">First choice</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">Second choice</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">Third choice</a></nav></div><input type="text" class="fs-input_field w-node-_4a95e53b-9f15-9fb4-e91d-4a03a8010c8e-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Job title" id="name-3"><input type="text" class="fs-input_field w-node-e810f514-91f8-58f5-ef2e-b5108deeeddd-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Job title" id="name-3">'
+    job_details_wrapper__grid.innerHTML = `<input type="text" class="fs-input_field w-node-dc5c7b47-21bb-07e1-c186-0837db214083-8efa05fd w-input" maxlength="256"
+    name="Job-title-${current_value + 1}" data-name="Job-title-${current_value + 1}" placeholder="Job title"
+    id="Job-title-${current_value + 1}">
+<div fs-selectcustom-element="dropdown" data-delay="0" data-hover="false"
+    id="w-node-ce715d50-d5de-3649-da19-3459e64cf688-8efa05fd" class="fs-select-1 w-dropdown">
+    <div class="fs-select_toggle-1 w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1"
+        aria-haspopup="listbox" aria-expanded="false" role="button" tabindex="0">
+        <div class="fs-select_icon-1 w-icon-dropdown-toggle" aria-hidden="true"></div>
+        <div class="fs-select_text-1">Junior Level</div>
+    </div>
+    <nav class="fs-select_list-1 w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1"
+        role="listbox" aria-multiselectable="false"><select id="Select-experience-level-${current_value + 1}"
+            name="Select-experience-level-${current_value + 1}" data-name="Select-experience-level-${current_value + 1}"
+            class="fs-select_field-1 w-select">
+            <option value="Junior Level">Junior Level</option>
+            <option value="Mid level">Mid level</option>
+            <option value="Second">Senior Level</option>
+            <option value="ceo">CEO</option>
+        </select><a href="#" class="fs-select_link-1 w-dropdown-link w--current" tabindex="0" role="option"
+            aria-selected="true">Junior Level</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1"
+            role="option" aria-selected="false">Mid level</a><a href="#" class="fs-select_link-1 w-dropdown-link"
+            tabindex="-1" role="option" aria-selected="false">Senior Level</a><a href="#"
+            class="fs-select_link-1 w-dropdown-link" tabindex="-1" role="option" aria-selected="false">CEO</a></nav>
+</div>
+<div fs-selectcustom-element="dropdown" data-delay="0" data-hover="false"
+    id="w-node-_0f6e73c3-6c6a-a7b7-7c6b-99e7225667fc-8efa05fd" class="fs-select-1 w-dropdown">
+    <div class="fs-select_toggle-1 w-dropdown-toggle" id="w-dropdown-toggle-2" aria-controls="w-dropdown-list-2"
+        aria-haspopup="listbox" aria-expanded="false" role="button" tabindex="0">
+        <div class="fs-select_icon-1 w-icon-dropdown-toggle" aria-hidden="true"></div>
+        <div class="fs-select_text-1">Part-time</div>
+    </div>
+    <nav class="fs-select_list-1 w-dropdown-list" id="w-dropdown-list-2" aria-labelledby="w-dropdown-toggle-2"
+        role="listbox" aria-multiselectable="false"><select id="Select-Job-type-4"
+            name="Select-Job-type-${current_value + 1}" data-name="Select-Job-type-${current_value + 1}" required=""
+            class="fs-select_field-1 w-select">
+            <option value="Part-time">Part-time</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Contract">Contract</option>
+        </select><a href="#" class="fs-select_link-1 w-dropdown-link w--current" tabindex="0" role="option"
+            aria-selected="true">Part-time</a><a href="#" class="fs-select_link-1 w-dropdown-link" tabindex="-1"
+            role="option" aria-selected="false">Full-time</a><a href="#" class="fs-select_link-1 w-dropdown-link"
+            tabindex="-1" role="option" aria-selected="false">Contract</a></nav>
+</div><input type="text" class="fs-input_field w-node-_4a95e53b-9f15-9fb4-e91d-4a03a8010c8e-8efa05fd w-input"
+    maxlength="256" name="Job-Category-${current_value + 1}" data-name="Job-Category-${current_value + 1}"
+    placeholder="Job Category" id="Job-Category-${current_value + 1}"><input type="email"
+    class="fs-input_field w-node-e810f514-91f8-58f5-ef2e-b5108deeeddd-8efa05fd w-input" maxlength="256"
+    name="Email-job-${current_value + 1}" data-name="Email-job-${current_value + 1}" placeholder="Email to apply"
+    id="Email-job" required="">`
 
     job_details_wrapper.append(job_details_wrapper__grid)
     margin_job_details.append(job_details_container)
@@ -43,10 +90,10 @@ element.addEventListener('change', (event) => {
     //compensation
     var container_large_compensation = document.createElement('div');
     container_large_compensation.setAttribute('class', 'container-large margin-top margin-xxlarge');
-    
+
     var heading_compensation = document.createElement('h3');
     heading_compensation.setAttribute('class', 'heading-style-h3');
-    heading_compensation.innerHTML = 'Compensation'
+    heading_compensation.innerHTML = `Compensation ${current_value + 1}`
     container_large_compensation.append(heading_compensation)
 
     container_large_compensation.append(margin_job_details);
@@ -63,7 +110,31 @@ element.addEventListener('change', (event) => {
 
     var job_details_wrapper__grid = document.createElement('div');
     job_details_wrapper__grid.setAttribute('class', 'job-item-content--wrapper is--grid_4');
-    job_details_wrapper__grid.innerHTML = '<input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336340-8efa05fd w-input" maxlength="256" name="Min-sal" data-name="Min-sal" placeholder="Minimum Salary" id="Min-sal"><input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336353-8efa05fd w-input" maxlength="256" name="Max-sal" data-name="Max-sal" placeholder="Maximum Salary" id="Max-sal"><p id="w-node-_55a05724-e6fe-45f8-1a41-81c1b9961bc6-8efa05fd" class="text-weight-light">No worries if the company is not listed yet, let’s fill out the fields below and make it happen.</p><input type="text" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336354-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Minimum Equity (If provided)" id="name-3"><input type="text" class="fs-input_field w-node-_16fff19b-86dc-5ba6-ccd7-01d1f071dd22-8efa05fd w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Maximum Equity (If provided)" id="name-3"><div id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a4-8efa05fd" class="remote--switech"><label id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a5-8efa05fd" class="w-checkbox fs-checkbox_toggle-7"><div class="fs-checkbox_toggle-dot-7"></div><input type="checkbox" class="w-checkbox-input fs-checkbox_button-7" name="Checkbox-7" fs-cmsfilter-field="featured" data-name="Checkbox 7" aria-label="add_description_here" id="Checkbox-7"><span class="fs-checkbox_label-7 w-form-label" for="Checkbox-7">Checkbox 8</span><div class="fs-checkbox_mask-7"></div></label><h5 id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3ab-8efa05fd" class="text-weight-light">Option to pay in crypto</h5></div>'
+    job_details_wrapper__grid.innerHTML = `<input type="number" class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336340-8efa05fd w-input" maxlength="256"
+    name="Min-sal-${current_value+1}" data-name="Min-sal-${current_value+1}" placeholder="Minimum Salary"
+    id="Min-sal-${current_value+1}" required=""><input type="number"
+    class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336353-8efa05fd w-input" maxlength="256"
+    name="Max-sal-${current_value+1}" data-name="Max-sal-${current_value+1}" placeholder="Maximum Salary"
+    id="Max-sal-${current_value+1}" required="">
+<p id="w-node-_55a05724-e6fe-45f8-1a41-81c1b9961bc6-8efa05fd" class="text-weight-light">No worries if the company is not
+    listed yet, let’s fill out the fields below and make it happen.</p><input type="text"
+    class="fs-input_field w-node-d997b593-e85c-2e53-aa83-df1df3336354-8efa05fd w-input" maxlength="256"
+    name="Min-eq-${current_value+1}" data-name="Min-eq-${current_value+1}" placeholder="Minimum Equity (If provided)"
+    id="Min-eq-${current_value+1}"><input type="text"
+    class="fs-input_field w-node-_16fff19b-86dc-5ba6-ccd7-01d1f071dd22-8efa05fd w-input" maxlength="256"
+    name="Max-eq-${current_value+1}" data-name="Max-eq-${current_value+1}" placeholder="Maximum Equity (If provided)"
+    id="Max-eq-${current_value+1}">
+<div id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a4-8efa05fd" class="remote--switech"><label
+        id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3a5-8efa05fd" class="w-checkbox fs-checkbox_toggle-7">
+        <div class="fs-checkbox_toggle-dot-7"></div><input type="checkbox" class="w-checkbox-input fs-checkbox_button-7"
+            name="option-pay-crypto-${current_value+1}" fs-cmsfilter-field="featured"
+            data-name="option-pay-crypto-${current_value+1}" aria-label="add_description_here"
+            id="option-pay-crypto-${current_value+1}"><span class="fs-checkbox_label-7 w-form-label"
+            for="option-pay-crypto-${current_value+1}">Checkbox 8</span>
+        <div class="fs-checkbox_mask-7"></div>
+    </label>
+    <h5 id="w-node-c02f9cb0-2c77-6a1b-90fb-f7640725f3ab-8efa05fd" class="text-weight-light">Option to pay in crypto</h5>
+</div>`
 
     job_details_wrapper.append(job_details_wrapper__grid)
     margin_job_details.append(job_details_container)

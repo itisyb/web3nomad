@@ -38,6 +38,7 @@ element.addEventListener('change', (event) => {
 
     job_details_wrapper.append(job_details_wrapper__grid)
     margin_job_details.append(job_details_container)
+    parent.append(container_large)
 
     // var job_compensation_detail = document.createElement('div');
     // job_compensation_detail.setAttribute('class', 'container-large margin-top margin-xxlarge');

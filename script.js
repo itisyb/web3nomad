@@ -42,21 +42,15 @@ element.addEventListener('change', (event) => {
     // var job_compensation_detail = document.createElement('div');
     // job_compensation_detail.setAttribute('class', 'container-large margin-top margin-xxlarge');
     // job_details_container.append(job_compensation_detail)
-    var container_large = document.createElement('div');
-    container_large.setAttribute('class', 'container-large margin-top margin-xxlarge');
+    var container_large_compensation = document.createElement('div');
+    container_large_compensation.setAttribute('class', 'container-large margin-top margin-xxlarge');
     
-    var heading = document.createElement('h3');
-    heading.setAttribute('class', 'heading-style-h3');
-    heading.innerHTML = 'Compensation'
-    container_large.append(heading)
+    var heading_compensation = document.createElement('h3');
+    heading_compensation.setAttribute('class', 'heading-style-h3');
+    heading_compensation.innerHTML = 'Compensation'
+    container_large_compensation.append(heading)
 
-    var margin_job_details = document.createElement('div');
-    margin_job_details.setAttribute('class', 'margin-top margin-medium is--relative');
-    container_large.append(margin_job_details)
-
-
-    var underlay = document.createElement('div');
-    underlay.setAttribute('class', 'underlay');
+    container_large_compensation.append(margin_job_details);
     margin_job_details.append(underlay)
 
     //job details
@@ -74,7 +68,7 @@ element.addEventListener('change', (event) => {
 
     job_details_wrapper.append(job_details_wrapper__grid)
     margin_job_details.append(job_details_container)
-    parent.append(container_large)
+    parent.append(container_large_compensation)
 
 
     console.log('greater')

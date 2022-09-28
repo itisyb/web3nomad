@@ -226,3 +226,4 @@
           el.getImageData(0, 0, img.width, img.height)
         );
       }
+

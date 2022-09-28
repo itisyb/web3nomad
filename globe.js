@@ -1,4 +1,5 @@
-const zones = [
+
+      const zones = [
         {
           //"Country": "Tokyo",
           lat: 35.6839,
@@ -136,9 +137,12 @@ const zones = [
       world.controls().enableZoom = false;
       world.controls().autoRotateSpeed = 1.8;
 
+      let wrapper = document.getElementById("globe-wrapper");
+      console.log(wrapper);
       window.addEventListener("resize", (event) => {
-        world.width([event.target.innerWidth]);
-        world.height([event.target.innerHeight]);
+        console.log([wrapper.getBoundingClientRect().width]);
+        world.width([wrapper.getBoundingClientRect().width]);
+        world.height([wrapper.getBoundingClientRect().height]);
       });
 
       function landDots(globeRad, rows, image) {
@@ -146,7 +150,6 @@ const zones = [
         const dots = [];
 
         for (let lat = -90; lat <= 90; lat += 180 / rows) {
-          console.log(lat);
           const radius = Math.cos(Math.abs(lat) * DEG2RAD) * globeRad;
           const circum = radius * Math.PI * 2 * 2;
           for (let r = 0; r < circum; r++) {

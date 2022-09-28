@@ -139,6 +139,8 @@
 
       let wrapper = document.getElementById("globe-wrapper");
       console.log(wrapper);
+      world.width([wrapper.getBoundingClientRect().width]);
+      world.height([wrapper.getBoundingClientRect().height]);
       window.addEventListener("resize", (event) => {
         console.log([wrapper.getBoundingClientRect().width]);
         world.width([wrapper.getBoundingClientRect().width]);

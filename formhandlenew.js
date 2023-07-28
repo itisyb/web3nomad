@@ -52,7 +52,7 @@ setValueOrHideParent('[custom="preview_description"]', $('input[name="JobDescrip
 setValueOrHideParent('[custom="primary_category"]', $('select[name="PrimaryCategory_1"]').val());
 setValueOrHideParent('[custom="primary_role"]', $('select[name="PrimaryRole_1"]').val());
 setValueOrHideParent('[custom="company_name"]', $('input[name="CompanyName"]').val());
-setValueOrHideParent('[custom="company_location"]', $('select[name="CompanyLocation"]').val());
+setValueOrHideParent('[custom="company_location"]', $('select[name="CompanyCountry"]').val());
 setValueOrHideParent('[custom="job_type"]', $('select[name="JobType_1"]').val());
 $('[custom="company_logo"]').attr('src', $('input[name="CompanyLogo"]').val());
 setValueOrHideParent('[custom="company_logo"]', $('input[name="CompanyLogo"]').val());
